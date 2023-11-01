@@ -1,0 +1,7 @@
+.app {
+  background: linear-gradient(75deg, #e0e0e0, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
