@@ -12,6 +12,7 @@ export default function SearchBar({ onSearch }) {
     setLocation(event.target.value);
   };
 
+  // Searches on enter key
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       handleSearch();
