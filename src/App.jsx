@@ -11,8 +11,6 @@ function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [location, setLocation] = useState("texas");
 
-  console.log(weatherData);
-
   const handleSearch = (newLocation) => {
     setLocation(newLocation);
   };
@@ -28,12 +26,12 @@ function App() {
   const weatherCondition = weatherData ? weatherData.weather[0].main : "";
 
   return (
-    <div className="app">
-      <header>
+    <div className="app container mt-5">
+      <header className="d-flex align-items-start bg-dark bg-gradient p-2">
         <SearchBar onSearch={handleSearch} />
       </header>
 
-      <main>
+      <main className="d-flex flex-column align-items-center justify-content-center bg-light bg-gradient rounded-bottom custom-height">
         <Location location={location} />
         <WeatherIcon weatherCondition={weatherCondition} />
         {weatherData ? (

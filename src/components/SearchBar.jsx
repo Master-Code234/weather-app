@@ -30,14 +30,18 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar d-flex align-items-center p-2 ">
       <div className="icon">
-        <button className="search-btn" type="submit" onClick={handleSearch}>
+        <button
+          className="search-btn border-0"
+          type="submit"
+          onClick={handleSearch}
+        >
           <SearchIcon />
         </button>
       </div>
       <input
-        className="search-input"
+        className="search-input border-0"
         type="search"
         placeholder="Enter a location..."
         value={location}

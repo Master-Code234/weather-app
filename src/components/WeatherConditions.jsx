@@ -9,7 +9,7 @@ export default function WeatherConditions({ weatherData }) {
 
   return (
     <div>
-      <p>{description}</p>
+      <p className="fs-4">{description}</p>
     </div>
   );
 }

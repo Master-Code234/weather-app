@@ -7,8 +7,6 @@ import rainAnimationData from "../animations/rain.json";
 import cloudyAnimationData from "../animations/cloudy.json";
 import snowAnimationData from "../animations/snow.json";
 
-import "../styles/WeatherIcon.css";
-
 export default function WeatherIcon({ weatherCondition }) {
   const lowerCaseConditions = weatherCondition.toLowerCase();
 

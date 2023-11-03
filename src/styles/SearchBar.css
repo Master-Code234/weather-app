@@ -1,26 +1,18 @@
+:root {
+  --bg-white: rgb(253, 253, 253);
+}
+
 .search-bar {
-  display: flex;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-top: 5rem;
-  border-radius: 1rem;
-}
-
-.search-input,
-.search-btn {
-  background-color: rgb(255, 255, 255);
-  color: #1c1a1a;
-  padding: 0.6rem;
-  border: none;
-  outline: none;
-}
-
-.search-input {
-  font-size: 1.2rem;
-  border-radius: 0 1.2rem 1.2rem 0;
-  width: 100%;
+  background-color: var(--bg-white);
+  border-radius: 1.2rem 1.2rem;
 }
 
 .search-btn {
+  background-color: var(--bg-white);
   border-radius: 1.2rem 0 0 1.2rem;
   cursor: pointer;
+}
+
+.search-input:focus {
+  outline: none;
 }
