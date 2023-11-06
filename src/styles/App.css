@@ -2,5 +2,8 @@
   min-height: 40vh;
 }
 
-
+.main {
+  color: #fff;
+  background: linear-gradient(45deg, rgb(217, 143, 143), #072272)
+}
 

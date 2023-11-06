@@ -29,7 +29,6 @@ export default function SearchBar({ onSearch }) {
     inputRef.current.focus(); // Set focus back to the input field
   };
 
-
   return (
     <div className="search-bar d-flex align-items-center p-2 ">
       <div className="icon">

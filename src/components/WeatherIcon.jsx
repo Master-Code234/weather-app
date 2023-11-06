@@ -6,6 +6,7 @@ import sunnyAnimationData from "../animations/sunny.json";
 import rainAnimationData from "../animations/rain.json";
 import cloudyAnimationData from "../animations/cloudy.json";
 import snowAnimationData from "../animations/snow.json";
+import foggyAnimationData from "../animations/foggy.json";
 
 export default function WeatherIcon({ weatherCondition }) {
   const lowerCaseConditions = weatherCondition.toLowerCase();
@@ -14,6 +15,8 @@ export default function WeatherIcon({ weatherCondition }) {
   const weatherAnimationData = {
     thunderstorm: thunderstormAnimationData,
     rain: rainAnimationData,
+    mist: rainAnimationData,
+    fog: foggyAnimationData,
     snow: snowAnimationData,
     clouds: cloudyAnimationData,
     sunny: sunnyAnimationData,
@@ -21,6 +24,10 @@ export default function WeatherIcon({ weatherCondition }) {
   };
 
   const animationData = weatherAnimationData[lowerCaseConditions];
+
+  if (!animationData) {
+    return <div>Icon not found</div>;
+  }
 
   return (
     <div className="weather-icon">
