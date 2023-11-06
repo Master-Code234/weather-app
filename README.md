@@ -37,6 +37,9 @@ To run the Weather App locally
 - Get an API key from [OpenWeatherMap](https://openweathermap.org/)
 - Start the development server with npm run dev.
 
+## Known Issues:
+- The app does not currently display an error message for a location not found.
+
  Feel free to explore or provide feedback to help improve this project. Enjoy using the Weather App!
 
 
