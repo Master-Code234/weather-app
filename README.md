@@ -37,6 +37,12 @@ To run the Weather App locally
 - Get an API key from [OpenWeatherMap](https://openweathermap.org/)
 - Start the development server with npm run dev.
 
+## Future Enhancements
+
+- Implement a geoLocator API to automatically determine the user's location.
+- Enhance the search bar with a list of searchable locations for user convenience.
+- Expand the app to display additional weather information, such as a 7-day forecast.
+
 ## Known Issues:
 - The app does not currently display an error message for a location not found.
 
